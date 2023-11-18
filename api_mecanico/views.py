@@ -1,7 +1,7 @@
 from rest_framework import viewsets
-from .serializer import ProgrammerSerializer
-from .models import Programmer
+from .serializer import Registro_mecSerializer
+from .models import registro_mecanico
 
-class ProgrammerViewSet(viewsets.ModelViewSet):
-    queryset=Programmer.objects.all()
-    serializer_class=ProgrammerSerializer
+class Registro_mecViewSet(viewsets.ModelViewSet):
+    queryset=registro_mecanico.objects.all()
+    serializer_class=Registro_mecSerializer

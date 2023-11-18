@@ -1,7 +1,9 @@
 from django.db import models
 
-class Programmer(models.Model):
-    fullname=models.CharField(max_length=100)
+class registro_mecanico(models.Model):
+    Nombre_Completo=models.CharField(max_length=100)
     nickname=models.CharField(max_length=50)
-    age=models.PositiveBigIntegerField()
+    Edad=models.PositiveBigIntegerField()
+    especialidad = models.CharField(max_length=100)
     activo=models.BooleanField(default=True)
+    

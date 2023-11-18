@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import Programmer
+from .models import registro_mecanico
 
-class ProgrammerSerializer(serializers.ModelSerializer):
+class Registro_mecSerializer(serializers.ModelSerializer):
     class Meta:
-        model=Programmer
+        model=registro_mecanico
         fields='__all__'
