@@ -6,5 +6,5 @@ router=routers.DefaultRouter()
 router.register(r'registro_mecanico',views.Registro_mecViewSet)
 
 urlpatterns=[
-    path('',include(router.urls))
+    path('',include(router.urls))   
 ]
