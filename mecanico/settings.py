@@ -28,22 +28,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['52.1.102.244','127.0.0.1','https://localhost:8100']
 
-INSTALLED_APPS = [
-    # ...
-    'corsheaders',
-    # ...
-]
-
-MIDDLEWARE = [
-    # ...
-    'corsheaders.middleware.CorsMiddleware',
-    # ...
-]
-
-CORS_ORIGIN_WHITELIST = [
-    'https://localhost:8100'
-]
-
 CORS_ALLOW_ALL_HEADERS=True
 
 # Application definition
@@ -55,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "corsheaders",
+    'corsheaders',
     'rest_framework',
     'api_mecanico'
 ]
@@ -63,7 +47,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    "corsheaders.middleware.CorsMiddleware",
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
