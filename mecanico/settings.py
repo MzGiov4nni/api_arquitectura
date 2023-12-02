@@ -44,6 +44,8 @@ CORS_ORIGIN_WHITELIST = [
     'https://localhost:8100'
 ]
 
+CORS_ALLOW_ALL_HEADERS=True
+
 # Application definition
 
 INSTALLED_APPS = [
