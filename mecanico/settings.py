@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,6 +27,18 @@ SECRET_KEY = 'django-insecure-zym@t)qjnyf6ofp0n#)!&eej_+ol6x-qin34ayawf--lx&mxaa
 DEBUG = True
 
 ALLOWED_HOSTS = ['52.1.102.244','127.0.0.1']
+
+INSTALLED_APPS = [
+    # ...
+    'corsheaders',
+    # ...
+]
+
+MIDDLEWARE = [
+    # ...
+    'corsheaders.middleware.CorsMiddleware',
+    # ...
+]
 
 
 # Application definition

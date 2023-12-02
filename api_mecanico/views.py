@@ -31,7 +31,7 @@ def Crear_registro(request):
 
 @api_view(['PUT'])
 def Actualizar_mecanico(request, pk):
-    registro_mecanico = Registro_mecanico.objects.get(id=pk)
+    Registro_mecanico = Registro_mecanico.objects.get(id=pk)
     serializer = Registro_mecSerializer(instance=Registro_mecanico, data=request.data)
 
     if serializer.is_valid():
@@ -43,7 +43,7 @@ def Actualizar_mecanico(request, pk):
 
 @api_view(['DELETE'])
 def Eliminar_mecanico(request, pk):
-    registro_mecanico = Registro_mecanico.objects.get(id=pk)
-    registro_mecanico.delete()
+    Registro_mecanico = Registro_mecanico.objects.get(id=pk)
+    Registro_mecanico.delete()
 
     return Response('Eliminado')
